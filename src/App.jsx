@@ -2,7 +2,7 @@ import Input from "./components/Input";
 import useTemp from "./hooks/useTemp";
 
 function App() {
-  const [temp, Dispatch] = useTemp();
+  const { celsius, fahrenheit, Dispatch } = useTemp();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -15,13 +15,13 @@ function App() {
           <Input
             id="celsius"
             label="Celsius"
-            value={temp.celsius}
+            value={celsius}
             onChange={Dispatch}
           />
           <Input
             id="fahrenheit"
             label="Fahrenheit"
-            value={temp.fahrenheit}
+            value={fahrenheit}
             onChange={Dispatch}
           />
         </div>
