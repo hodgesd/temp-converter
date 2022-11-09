@@ -1,4 +1,4 @@
-import capitalize from "lodash/capitalize";
+// import capitalize from "lodash/capitalize";
 import PropTypes from "prop-types";
 
 export default function Input({ id, label, value, onChange }) {
