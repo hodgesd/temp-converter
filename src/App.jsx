@@ -12,13 +12,18 @@ function App() {
         </h1>
 
         <div className="flex gap-x-4 justify-center">
-          <Input id="celsius"
-          label="Celsius"
-          value={temp.celsius}
-          onChange={Dispatch}
+          <Input
+            id="celsius"
+            label="Celsius"
+            value={temp.celsius}
+            onChange={Dispatch}
           />
-
-          <Input>id="fahrenheit" />
+          <Input
+            id="fahrenheit"
+            label="Fahrenheit"
+            value={temp.fahrenheit}
+            onChange={Dispatch}
+          />
         </div>
       </main>
     </div>
